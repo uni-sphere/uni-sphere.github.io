@@ -4,6 +4,17 @@
 
   "use strict";
 
+    $(function(){
+      $("#typed").typed({
+        stringsElement: $('#typed-strings'),
+        loop: true,
+        startDelay: 1000,
+        backDelay: 800,
+        typeSpeed: 20,
+        backSpeed: 30,
+      });
+    });
+
   /*----------  Random Tree  ----------*/
   var width = $('.feature-visual').width(),
     height = 500;
