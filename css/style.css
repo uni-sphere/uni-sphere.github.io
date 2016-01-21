@@ -125,6 +125,7 @@ section h2.section-heading {
   font-size: 50px;
   letter-spacing: -1px;
   line-height: 40px;
+  white-space: nowrap;
 }
 section .section-subheading {
   margin-bottom: 95px;
@@ -224,6 +225,7 @@ body.modal-open {
   background: #f8f8f8;
 }
 .header-buttons {
+  position: relative;
   margin: 60px auto 100px auto;
 }
 .primary-button {
@@ -630,12 +632,49 @@ header .intro-text{
   display: block;
 }
 
-#typed, .typed-cursor, .intro-heading{
+.intro-heading{
   font-family: PTSans;
   font-size: 30px;
   font-weight: 400;
   margin-top: 40px;
-  display: inline;
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 40px;
+}
+
+.typed-cursor{
+  font-family: PTSans;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  float: left;
+}
+
+#intro-leading-fixed{
+  transition: all 1s ease-in-out;
+}
+
+.dual-intro{
+  position: absolute;
+  right: calc(50%);
+}
+
+
+#typed-container{
+  position: absolute;
+  left: calc(50%);
+}
+
+.blank-space{
+  padding-left: 8px;
+}
+#typed{
+  font-family: PTSans;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  float: left;
 }
 
 header .intro-text {
@@ -651,7 +690,6 @@ header .intro-text .intro-lead-in {
   line-height: 120px;
   font-weight: bold;
 }
-
 
 
 .intro-lead-in-small{
@@ -681,10 +719,6 @@ header .container {
 -----------------------------------------*/
 /*     6.1 ABOUT*/
 
-.feature-visual svg{
-  z-index: 100;
-}
-
 .node {
   stroke-width: 2px;
   fill: #1080f2;;
@@ -702,6 +736,7 @@ header .container {
    display: flex;
   justify-content: center;
 }
+
 
 #services .container{
   align-self: center;
@@ -728,6 +763,23 @@ header .container {
 }
 /*6.2 FEATURES*/
 
+.feature-visual-container {
+  position: relative;
+  overflow: visible
+}
+
+.feature-gif-container{
+  position: absolute;
+  top: 33px;
+  bottom: 60px;
+  right: -195px;
+  left: 105px;
+  z-index: 100;
+}
+.feature-gif{
+  width: 100%;
+  height: 100%;
+}
 
 #features {overflow: hidden;}
 #features .container {
@@ -840,7 +892,7 @@ header .container {
   left: -8px;
 }
 #features img {
-  margin-right: -200px;
+  /*margin-right: -200px;*/
 }
 
 .features-tabs ul {
