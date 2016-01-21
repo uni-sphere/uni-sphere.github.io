@@ -586,7 +586,43 @@
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.015755, -0.770736),
       map: map,
-      icon: 'img/map-marker.png'
+      icon: 'img/map-marker-red.png',
+      title: 'Unisphere HQ'
+    });
+
+    new google.maps.Marker({
+      position: new google.maps.LatLng(48.458955, 7.476665),
+      map: map,
+      icon: 'img/map-marker-red.png',
+      title: 'Unisphere HQ'
+    });
+
+    new google.maps.Marker({
+      position: new google.maps.LatLng(48.461682, 7.487059),
+      map: map,
+      icon: 'img/map-marker.png',
+      title: 'Lycée Freppel'
+    });
+
+    new google.maps.Marker({
+      position: new google.maps.LatLng(48.594678, 7.754813),
+      map: map,
+      icon: 'img/map-marker.png',
+      title: 'Lycée kleber'
+    });
+
+    new google.maps.Marker({
+      position: new google.maps.LatLng(48.561099, 7.748303),
+      map: map,
+      icon: 'img/map-marker.png',
+      title: 'Lycée Couffignal'
+    });
+
+    new google.maps.Marker({
+      position: new google.maps.LatLng(48.583207, 7.774042),
+      map: map,
+      icon: 'img/map-marker.png',
+      title: 'FSEG Strasbourg'
     });
   }
 
