@@ -5,7 +5,6 @@
   "use strict";
 
   /*----------  Random Tree  ----------*/
-  console.log($('.feature-visual').width() +" "+ $('.feature-visual').height())
   var width = $('.feature-visual').width(),
     height = 500;
 

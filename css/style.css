@@ -606,7 +606,7 @@ body.modal-open {
 -----------------------------------------*/
 
 header {
-  height: 60vh;
+  min-height: 60vh;
   position: relative;
   text-align: center;
   color: #fff;
@@ -681,7 +681,7 @@ header .container {
 }
 
 #services{
-  padding: 0;
+  padding: 20px;
   min-height: 40vh;
 
    display: flex;
@@ -718,15 +718,17 @@ header .container {
 #features .container {
   position: relative;
 }
-#features img {
+
+#features .primary-button{
   position: absolute;
-  top: 0;
-  right: 0
+  bottom: 20px;
+  left: 20px;
 }
 #features .section-subheading {
   margin-bottom: 30px;
   margin-top: 5px;
-  max-width: 450px;
+  text-align: justify;
+  text-justify: inter-word;
   float: left;
   line-height: 25px;
 }
@@ -737,7 +739,8 @@ header .container {
   height: 60px;
   background-color: white;
   border: 1px solid #d1d1d1;
-  margin-top: 100px;
+  margin-bottom: 80px;
+  /*margin-top: 100px;*/
 }
 .features-tabs .tab {
   -webkit-transition: 0.3s;
@@ -758,21 +761,25 @@ header .container {
   background: #fafafa;
 }
 .features-tabs .tab a {
-  color: #bbb;
+  background: #3697F9;
+  color: #E8E8E8;
   text-transform: uppercase;
   display: block;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.features-tabs .tab.active {
-  background: #fff;
+.features-tabs .tab .active {
+  background: #1080f2;
 }
-.features-tabs .tab a.active {
-  color: #1080f2
-}
+
+/*.features-tabs .tab a.active {
+  color: #1080f2;
+  color: white;
+}*/
 .features-tabs .tab:hover a {
-  color: #1080f2
+  /*color: #1080f2;*/
+  color: white;
 }
 .features-tabs .panel-container {
   background: #fff;
@@ -798,12 +805,12 @@ header .container {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #d1d1d1;
+  border-top: 10px solid #d1d1d1;
   opacity: 1;
   position: absolute;
   left: 50%;
   margin-left: -5px;
-  top: -10px;
+  bottom: -12px;
 }
 .features-tabs .tab .triangle .inner-triangle {
   display: block;
@@ -812,8 +819,8 @@ header .container {
   transition: 0s;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #fff;
-  top: 2px;
+  border-top: 8px solid #1080f2;
+  bottom: 2px;
   position: absolute;
   left: -8px;
 }
