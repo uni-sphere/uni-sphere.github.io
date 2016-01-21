@@ -7,16 +7,16 @@
     $(function(){
       $("#typed").typed({
         stringsElement: $('#typed-strings'),
-        // loop: true,
+        loop: true,
         startDelay: 1000,
         backDelay: 800,
         typeSpeed: 20,
         backSpeed: 30,
         callback: function() {
-          $('#typed').addClass("hidden")
-          $('.typed-cursor').addClass("hidden")
-          $('#intro-leading-fixed').removeClass("dual-intro")
-          document.getElementById("intro-leading-fixed").textContent="With Unisphere you can.";
+          // $('#typed').addClass("hidden")
+          // $('.typed-cursor').addClass("hidden")
+          // $('#intro-leading-fixed').removeClass("dual-intro")
+          // document.getElementById("intro-leading-fixed").textContent="With Unisphere you can.";
         },
       });
     });
@@ -73,8 +73,8 @@
   // FORM VALIDATION
 
   $(".subscribe-form input").jqBootstrapValidation({
-    preventSubmit: true,
-    submitSuccess: function($form, event) {
+    preventSubmit: true
+,    submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       $.ajax({
         success: function() {
