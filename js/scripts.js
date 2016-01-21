@@ -73,11 +73,13 @@
   // FORM VALIDATION
 
   $(".subscribe-form input").jqBootstrapValidation({
-    preventSubmit: true
-,    submitSuccess: function($form, event) {
+    preventSubmit: true,
+      submitSuccess: function($form, event) {
+      var email = $("input").val();
       event.preventDefault(); // prevent default submit behaviour
       $.ajax({
         success: function() {
+          Rollbar.info("Newsletter request",{email: email});
           $('#subscribe-success').html("<div class='alert alert-success'>");
           $('#subscribe-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
@@ -108,15 +110,8 @@
         firstName = name.split(' ').slice(0, -1).join(' ');
       }
       $.ajax({
-        url: "././mail/contact_me.php",
-        type: "POST",
-        data: {
-          name: name,
-          email: email,
-          message: message
-        },
-        cache: false,
         success: function() {
+          Rollbar.info("Contact request",{email: email, name: name, message: message});
           // Success message
           $('#success').html("<div class='alert alert-success'>");
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
