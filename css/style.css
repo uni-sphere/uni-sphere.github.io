@@ -519,6 +519,7 @@ body.modal-open {
 -----------------------------------------*/
 .link-try-it{
   border: 2px solid white;
+  border-radius: 3px;
 }
 .navbar-default {
   border-color: transparent;
@@ -699,12 +700,12 @@ header .intro-text{
 }
 
 header .intro-text {
-  padding-top: 165px;
+  padding-top: 100px;
   padding-bottom: 0;
 }
 header .intro-text .intro-lead-in {
   font-family: WorkSans;
-  font-size: 58px;
+  font-size: 50px;
   font-weight: 200;
   letter-spacing: -1px;
   margin: 0;
@@ -1704,7 +1705,11 @@ header .container {
 /* --------------------------------------
 7.FOOTER
 -----------------------------------------*/
-
+.unisphere-footer{
+  font-size: 40px;
+  display: block;
+  line-height: 50px;
+}
 footer {
     padding: 50px 0 40px 0;
     text-align: center;
