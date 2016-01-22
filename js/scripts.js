@@ -84,7 +84,7 @@
           $('#subscribe-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
           $('#subscribe-success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
+            .append("<strong>You have been subscribed! </strong>");
           $('#subscribe-success > .alert-success')
             .append('</div>');
         }
@@ -112,7 +112,7 @@
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
           $('#success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
+            .append("<strong>Your message has been sent! </strong>");
           $('#success > .alert-success')
             .append('</div>');
 
