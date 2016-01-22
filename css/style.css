@@ -795,6 +795,11 @@ header .container {
   bottom: 20px;
   left: 20px;
 }
+
+.feature-visual{
+  margin-left: -80px;
+}
+
 #features .section-subheading {
   margin-bottom: 30px;
   margin-top: 5px;
