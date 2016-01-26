@@ -388,6 +388,8 @@
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
       scrollwheel: false,
+      disableDefaultUI: true,
+
       // How zoomed in you want the map to start at (always required)
       zoom: 6, // The latitude and longitude to center the map (always required)
       center: new google.maps.LatLng(52.015755, -0.770736), // New York           // How you would like to style the map. 

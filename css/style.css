@@ -836,7 +836,7 @@ header .container {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.2s ease-in-out;
 }
 .features-tabs .tab .active {
@@ -850,6 +850,10 @@ header .container {
 .features-tabs .tab:hover a {
   color: white;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.features-tabs .tab a.active:hover{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .features-tabs .panel-container {
   background: #fff;
@@ -1692,10 +1696,13 @@ header .container {
   height: 100%;
   width: 50%;
   margin-left: -85px;
+  /*z-index: -1;*/
+  overflow: hidden
+  /*margin-bottom: 20px;*/
 }
 .contact-map-container #map {
   width: 100%;
-  height: 100%;
+  height: calc(100% + 20px);
 }
 #contactForm .alert-success {
   color: #1080f2;
@@ -1716,6 +1723,7 @@ footer {
     padding: 50px 0 40px 0;
     text-align: center;
     background-color: #273140;
+    z-index:999;
 }
 .lower-footer span,
 .lower-footer a {
