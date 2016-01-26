@@ -644,14 +644,6 @@ header .intro-text{
   height: 40px;
 }
 
-.typed-cursor{
-  font-family: PTSans;
-  font-size: 30px;
-  font-weight: 400;
-  position: relative;
-  float: left;
-}
-
 #intro-leading-fixed{
   transition: all 1s ease-in-out;
 }
@@ -662,35 +654,36 @@ header .intro-text{
 }
 
 .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+  opacity: 1;
+  font-family: PTSans;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  float: left;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
 #typed-container{
   position: absolute;
   left: calc(50% + 4px);
 }
-
-/*.blank-space{
-  padding-left: 8px;
-}*/
 #typed{
   font-family: PTSans;
   font-size: 30px;
@@ -698,7 +691,6 @@ header .intro-text{
   position: relative;
   float: left;
 }
-
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 0;
@@ -712,8 +704,6 @@ header .intro-text .intro-lead-in {
   line-height: 120px;
   font-weight: bold;
 }
-
-
 .intro-lead-in-small{
   font-weight: normal;
 }
@@ -755,10 +745,9 @@ header .container {
   padding: 20px;
   min-height: 40vh;
 
-   display: flex;
+  display: flex;
   justify-content: center;
 }
-
 
 #services .container{
   align-self: center;
@@ -785,7 +774,10 @@ header .container {
 }
 /*6.2 FEATURES*/
 
-#features {overflow: hidden;}
+#features {
+  overflow: hidden;
+}
+
 #features .container {
   position: relative;
 }
@@ -844,6 +836,8 @@ header .container {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
 }
 .features-tabs .tab .active {
   background: #1080f2;
@@ -855,6 +849,7 @@ header .container {
 
 .features-tabs .tab:hover a {
   color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .features-tabs .panel-container {
   background: #fff;

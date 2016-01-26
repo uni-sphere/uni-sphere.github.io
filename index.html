@@ -30,6 +30,16 @@
     // End Rollbar Snippet
   </script>
 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62034618-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
 
   </head>
   <body>
@@ -82,7 +92,7 @@
         <div class="intro-text">
           <h1 class="intro-lead-in">unisphere <span class="intro-lead-in-small">Virtual Learning Environment</span></h1>
           <div class="intro-heading">
-            <span id="intro-leading-fixed" class="dual-intro">With <strong>unisphere</strong> you can</span>
+            <span id="intro-leading-fixed" class="dual-intro hidden-xs">With <strong>unisphere</strong> you can</span>
             <div id="typed-container">
               <div id="typed-strings">
                 <p><strong>Manage</strong> your classes.</p>
@@ -137,13 +147,78 @@
       </div>
     </section>
     <!-- END SERVICES -->
+    <section id="features-xs" class="gray-bg visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <h2 class="section-heading">Course Management</h2>
+              <p class="section-subheading ">
+                Easily manage courses or classes online, set-up from scratch takes just 10 minutes. The Floviz layout makes complex hierarchical organisation easy! One click branch addition or substraction easily structures your content.
+              </p>
+            </div>
+            <ul>
+              <li>Simple one click invites for course registration</li>
+              <li>Floviz dynamic layout</li>
+              <!-- <li>Setup and installations takes ten minutes</li> -->
+            </ul>
+          </div>
+     
+          <div class="col-md-6 feature-visual">
+            <img src="video/manage.gif" alt="Manage demo">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <h2 class="section-heading">Share Files</h2>
+              <p class="section-subheading "> 
+                Files can be uploaded with just a drag and drop. unisphere automatically reconstructs the folder(s) layout. Once uploaded you can move your files between nodes seemlessly.
+              </p>
+            </div>
+            <ul>
+              <li>Simple drag and drop file upload</li>
+              <li>Automated structure reconstruction from submitted folders</li>
+              <li>Add, subtract or move your files between nodes</li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 feature-visual">
+            <img src="video/share.gif" class="fadeRight animated" alt="Share demo">
+          </div>
+        </div>
+         
+          
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <h2 class="section-heading">Hand-in Assignments</h2>
+              <p class="section-subheading ">
+                Create and receive assignments seemlessly within unisphere. unisphere allows you to bulk download all open assignments. Once submitted, students can receive feedback and grading on completed assignments.
+              </p>
+            </div>
+            <ul>
+              <li>One click bulk assignments download</li>
+              <li>Grading and feedback for submitted assignments</li>
+            </ul>
+          </div>
+         
+          <div class="col-md-6 feature-visual">
+            <img src="video/assignment.gif" class="fadeRight animated" alt="Assignment demo">
+          </div>
+        </div>
+           
+      </div>
+    </section>
+
     <!-- FEATURES -->
-    <section id="features" class="gray-bg">
+    <section id="features" class="gray-bg hidden-xs">
       <div class="container">
         <div class="row">
           <div id="features-tabs" class="features-tabs">
             <!-- FEATURES TABS -->
-            <ul class='tabs hidden-xs'>
+            <ul class='tabs'>
               <li class='tab col-md-4'><a href="#features-tab1"><span class="triangle"><span class="inner-triangle"></span></span>Course Management</a></li>
               <li class='tab col-md-4'><a href="#features-tab2"><span class="triangle"><span class="inner-triangle"></span></span>Share files</a></li>
               <li class='tab col-md-4'><a href="#features-tab3"><span class="triangle"><span class="inner-triangle"></span></span>Hand-in assignments</a></li>
@@ -438,8 +513,8 @@
               <!-- <a class="logo page-scroll" href="#page-top"><img src="img/logo.png" class="img-responsive" alt=""></a> -->
               <!-- <p>unisphere.eu</p> -->
               <p>
-                <span class="unisphere-footer">unisphere.eu</span>
-                <span>Bring collaboration to the next level</span>
+                <span class="unisphere-footer">unisphere</span>
+                <span>Reduce entropy in education</span>
               </p>
             </div>
             <div class="pull-right">

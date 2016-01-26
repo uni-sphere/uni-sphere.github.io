@@ -326,7 +326,7 @@
     $('a.page-scroll').on('click', function(event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 64
+        scrollTop: $($anchor.attr('href')).offset().top - 20
       }, 1500, 'easeInOutExpo');
       event.preventDefault();
     });
@@ -388,8 +388,9 @@
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
+      scrollwheel: false,
       // How zoomed in you want the map to start at (always required)
-      zoom: 7, // The latitude and longitude to center the map (always required)
+      zoom: 6, // The latitude and longitude to center the map (always required)
       center: new google.maps.LatLng(52.015755, -0.770736), // New York           // How you would like to style the map. 
       // This is where you would paste any style found on Snazzy Maps.
       styles: [{
