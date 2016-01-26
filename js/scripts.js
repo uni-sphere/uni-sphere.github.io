@@ -261,22 +261,21 @@
 
   // PIE CHARTS
 
-  $(window).on("scroll", function(event) {
-    $('.chart:in-viewport').easyPieChart({
-      animate: 2000,
-      barColor: '#1080f2',
-      lineWidth: 3,
-      easing: 'easeOutBounce',
-      lineCap: 'square',
-      size: 230,
-      trackColor: false,
-      scaleColor: false,
-      animate: {
-        duration: 1500,
-        enabled: true
-      }
-    });
-  });
+  // $(window).on("scroll", function(event) {
+  //   $('.chart:in-viewport').easyPieChart({
+  //     barColor: '#1080f2',
+  //     lineWidth: 3,
+  //     easing: 'easeOutBounce',
+  //     lineCap: 'square',
+  //     size: 230,
+  //     trackColor: false,
+  //     scaleColor: false,
+  //     animate: {
+  //       duration: 1500,
+  //       enabled: true
+  //     }
+  //   });
+  // });
 
   //AUTO PLAY YOUTUBE VIDEO
 
