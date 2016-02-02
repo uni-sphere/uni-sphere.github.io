@@ -254,10 +254,10 @@
 
   // FEATURES SECTION TABS
 
-  // $('#features-tabs').easytabs({
-  //   animationSpeed: 'normal',
-  //   updateHash: false
-  // });
+  $('#features-tabs').easytabs({
+    animationSpeed: 'normal',
+    updateHash: false
+  });
 
   // PIE CHARTS
 
