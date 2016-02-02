@@ -254,10 +254,10 @@
 
   // FEATURES SECTION TABS
 
-  $('#features-tabs').easytabs({
-    animationSpeed: 'normal',
-    updateHash: false
-  });
+  // $('#features-tabs').easytabs({
+  //   animationSpeed: 'normal',
+  //   updateHash: false
+  // });
 
   // PIE CHARTS
 
@@ -279,40 +279,40 @@
 
   //AUTO PLAY YOUTUBE VIDEO
 
-  function autoPlayYouTubeModal() {
-    var trigger = $("body").find('[data-toggle="modal"]');
-    trigger.click(function() {
-      var theModal = $(this).data("target"),
-        videoSRC = $('#video-modal iframe').attr('src'),
-        videoSRCauto = videoSRC + "?autoplay=1";
-      $(theModal + ' iframe').attr('src', videoSRCauto);
-      $(theModal + ' button.close').on( 'click' , function() {
-        $(theModal + ' iframe').attr('src', videoSRC);
-      });
-      $('.modal').on( 'click' , function() {
-        $(theModal + ' iframe').attr('src', videoSRC);
-      });
-    });
-  }
-  autoPlayYouTubeModal();
+  // function autoPlayYouTubeModal() {
+  //   var trigger = $("body").find('[data-toggle="modal"]');
+  //   trigger.click(function() {
+  //     var theModal = $(this).data("target"),
+  //       videoSRC = $('#video-modal iframe').attr('src'),
+  //       videoSRCauto = videoSRC + "?autoplay=1";
+  //     $(theModal + ' iframe').attr('src', videoSRCauto);
+  //     $(theModal + ' button.close').on( 'click' , function() {
+  //       $(theModal + ' iframe').attr('src', videoSRC);
+  //     });
+  //     $('.modal').on( 'click' , function() {
+  //       $(theModal + ' iframe').attr('src', videoSRC);
+  //     });
+  //   });
+  // }
+  // autoPlayYouTubeModal();
 
   // TESTIMONIALS SLIDER
 
-  $("#testimonials .slider").owlCarousel({
-    navigation: true,
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    singleItem: true
-  });
+  // $("#testimonials .slider").owlCarousel({
+  //   navigation: true,
+  //   slideSpeed: 300,
+  //   paginationSpeed: 400,
+  //   singleItem: true
+  // });
 
   // CLIENTS SLIDER
 
-  $("#clients .slider").owlCarousel({
-    navigation: true,
-    pagination: false,
-    autoPlay: 5000, //Set AutoPlay to 3 seconds 
-    items: 5,
-  });
+  // $("#clients .slider").owlCarousel({
+  //   navigation: true,
+  //   pagination: false,
+  //   autoPlay: 5000, //Set AutoPlay to 3 seconds 
+  //   items: 5,
+  // });
 
   // MAIN MENU TOGGLE AND SMOOTH SCROLL
 
