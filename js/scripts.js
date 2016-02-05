@@ -307,12 +307,12 @@
 
   // CLIENTS SLIDER
 
-  // $("#clients .slider").owlCarousel({
-  //   navigation: true,
-  //   pagination: false,
-  //   autoPlay: 5000, //Set AutoPlay to 3 seconds 
-  //   items: 5,
-  // });
+  $("#clients .slider").owlCarousel({
+    navigation: true,
+    pagination: false,
+    autoPlay: 5000, //Set AutoPlay to 3 seconds 
+    items: 5,
+  });
 
   // MAIN MENU TOGGLE AND SMOOTH SCROLL
 
